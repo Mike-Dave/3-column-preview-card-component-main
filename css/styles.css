@@ -1,0 +1,113 @@
+body {
+  background-color: hsl(0, 0%, 95%);
+  overflow-y: hidden;
+}
+.flexbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.item {
+  height: 400px;
+  width: 250px;
+  padding: 10px;
+}
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 9px 0 0 9px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 9px 9px 0;
+}
+.car-image {
+  margin: 40px 30px 0;
+  height: 30px;
+}
+h1 {
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 95%);
+}
+P {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  padding-bottom: 40px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.headings {
+  margin: 30px;
+}
+button {
+  border: none;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+.sedan-button {
+  color: hsl(31, 77%, 52%);
+}
+.suvs-button {
+  color: hsl(184, 100%, 22%);
+}
+.luxury-button {
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.sedan-button:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs-button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury-button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+@media (max-width: 500px) {
+  body {
+    margin: 50px auto;
+    overflow-y: visible;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.7rem;
+    padding-bottom: 5px;
+    padding-right: 20px;
+  }
+  .item {
+    height: 300px;
+  }
+  .flexbox-container {
+    flex-direction: column;
+  }
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 9px 9px 0 0;
+  }
+  .suvs {
+    background-color: hsl(184, 100%, 22%);
+  }
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 9px 9px;
+  }
+  .car-image {
+    margin: 20px 30px 0;
+  }
+  .headings {
+    margin: 30px;
+  }
+}
